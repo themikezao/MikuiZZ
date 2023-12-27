@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+  color:rgb(119, 84, 215)
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background:  rgb(119, 84, 215);
+}
+
+body h2 {
+  color: white;
+}
+
+main {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%; /* Ajuste a largura para 90% da largura da tela */
+  max-width: 500px;
+  min-height: 70vh; /* Ajuste a altura mínima para 70% da altura da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  border-radius: 10px;
+  width: 90%; /* Ajuste a largura para 90% da largura da tela */
+  max-width: 700px;
+  min-height: 70vh; /* Ajuste a altura mínima para 70% da altura da tela */
+  font-size: 21px;
+}
+
+h1{
+  font-size: 38px;
+  color: white;
+  padding: 14px;
+}
+
+h3{
+  padding: -12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 70px;
+}
+
+.spnQtd {
+  text-align: end;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* Estilo para a opção selecionada */
+.answer.selected {
+  background-color: rgba(127, 84, 246, 0.5); /* Cor de fundo para a opção selecionada */
+  cursor: default; /* Remover o cursor de ponteiro para indicar que não é mais clicável */
+}
+
+button {
+  width: 100%;
+  text-align: start;
+  padding: 50px; /* Reduzi o padding para se adequar melhor em telas menores */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(77,39,182,1);
+  color: white;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.finish button {
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%; /* Em telas menores, use 100% da largura da tela */
+    min-height: auto; /* Remova a altura mínima */
+  }
+
+  button {
+    padding: 15px; /* Ajuste o padding para dispositivos móveis */
+  }
+
+  p{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    border-radius: 10px;
+    width: 100%; /* Ajuste a largura para 90% da largura da tela */
+    max-width: 700px;
+    min-height: 70vh; /* Ajuste a altura mínima para 70% da altura da tela */
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  main {
+    width: 100%; /* Ajuste a largura para 80% da largura da tela para tablets */
+    min-height: 500px;
+    max-width: 600px;
+  }
+
+  button {
+    padding: 25px; /* Ajuste o padding para tablets */
+  }
+
+  p{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    border-radius: 10px;
+    width: 95%; /* Ajuste a largura para 90% da largura da tela */
+    max-width: 700px;
+    min-height: 70vh; /* Ajuste a altura mínima para 70% da altura da tela */
+    font-size: 29px;
+  }
+
+}
