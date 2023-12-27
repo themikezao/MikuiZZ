@@ -38,7 +38,7 @@ p{
   color: white;
   align-items: center;
   justify-content: center;
-  padding: 80px;
+  padding: 50px;
   border-radius: 10px;
   width: 90%; /* Ajuste a largura para 90% da largura da tela */
   max-width: 700px;
@@ -104,7 +104,7 @@ button {
 
 @media screen and (max-width: 600px) {
   main {
-    width: 90%; /* Em telas menores, use 100% da largura da tela */
+    width: 90%; /* Em telas menores, use 90% da largura da tela */
     min-height: auto; /* Remova a altura mínima */
   }
 
@@ -118,16 +118,16 @@ button {
     justify-content: center;
     padding: 28px;
     border-radius: 10px;
-    width: 100%; /* Ajuste a largura para 90% da largura da tela */
+    width: 100%; /* Ajuste a largura para 100% da largura da tela */
     max-width: 700px;
     min-height: 70vh; /* Ajuste a altura mínima para 70% da altura da tela */
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   main {
-    width: 100%; /* Ajuste a largura para 80% da largura da tela para tablets */
+    width: 100%; /* Ajuste a largura para 100% da largura da tela para tablets */
     min-height: 500px;
     max-width: 600px;
   }
@@ -142,10 +142,10 @@ button {
     justify-content: center;
     padding: 28px;
     border-radius: 10px;
-    width: 95%; /* Ajuste a largura para 90% da largura da tela */
+    width: 95%; /* Ajuste a largura para 95% da largura da tela */
     max-width: 700px;
     min-height: 70vh; /* Ajuste a altura mínima para 70% da altura da tela */
-    font-size: 29px;
+    font-size: 20px;
   }
 
 }
